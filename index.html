@@ -1,1 +1,598 @@
-<h4>Hello, World!</h4>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible sidebar using Bootstrap 4</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="/Content/style2.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    
+    
+        
+
+
+
+    
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Source Code Management</h3>
+            </div>
+            <ul class="list-unstyled components">
+
+                    <li class="active">
+                        <a href="#rtcsteps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">RTC Steps</a>
+                        <ul class="collapse list-unstyled" id="rtcsteps">
+                                <li>
+                                    <a href="#userstory">User Story</a>
+                                </li>
+                                <li>
+                                    <a href="#statusdevready">Set status to Dev Ready</a>
+                                </li>
+                                <li>
+                                    <a href="#decomposetasksbox">Decompose into Tasks Box</a>
+                                </li>
+                                <li>
+                                    <a href="#createpeerreviewtasks">Create Peer Review Tasks</a>
+                                </li>
+                                <li>
+                                    <a href="#completealltasks">Complete All Tasks Box</a>
+                                </li>
+                                <li>
+                                    <a href="#setchildtaskstodone">Set Child Tasks to Done</a>
+                                </li>
+                                <li>
+                                    <a href="#attachuserstory">Attach User Story</a>
+                                </li>
+                                <li>
+                                    <a href="#requestsqaapproval">Requesting SQA Approval of User Story</a>
+                                </li>
+                                <li>
+                                    <a href="#productownerapproval">Product Owner Approval</a>
+                                </li>
+                        </ul>
+                    </li>                
+                    <li class="active">
+                        <a href="#defectsteps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Defect Steps</a>
+                        <ul class="collapse list-unstyled" id="defectsteps">
+                                <li>
+                                    <a href="#defectcreated">Defect is Created and Synced to RTC</a>
+                                </li>
+                                <li>
+                                    <a href="#plantoiteration">Plan to an Iteration</a>
+                                </li>
+                                <li>
+                                    <a href="#defectdecompose">Decompose into Tasks Box</a>
+                                </li>
+                                <li>
+                                    <a href="#defectbeforecompletealltasks">steps before going to “Complete All Tasks box”</a>
+                                </li>
+                                <li>
+                                    <a href="#defectcompletealltasks">Steps for “Complete All Tasks Box” </a>
+                                </li>
+                                <li>
+                                    <a href="#defectbeforesqareview">Checklist before SQA review</a>
+                                </li>
+                                <li>
+                                    <a href="#defectrequestsqa">Requesting SQA to review the Defect</a>
+                                </li>
+                        </ul>
+                    </li>                
+                    <li class="active">
+                        <a href="#almsteps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ALM Steps</a>
+                        <ul class="collapse list-unstyled" id="almsteps">
+                        </ul>
+                    </li>                
+                    <li class="active">
+                        <a href="#releaseworkitemsteps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Release Work Item Steps</a>
+                        <ul class="collapse list-unstyled" id="releaseworkitemsteps">
+                        </ul>
+                    </li>                
+            </ul>
+        </nav>
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <input type="submit" value="Search" class="btn btn-default" />
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Begin text of SLM RTC Steps document -->
+            <h3><a name="userstory">Follow the User Story Lifecycle diagram</a></h3>
+            <p>When Lamar creates a User Story he puts it in the Product Backlog</p>
+<p>at this point you may want to create a Change Ticket  for this User Story, since you will need at least a 7 day window between the time the Change Ticket is created and when you install to Production
+</p>
+            <p>
+                Steps to take for “Plan to an Iteration Box” on User Story Lifecycle diagram
+                -	Moving user stories from the Product Backlog to an Iteration as you begin working on them
+
+            <p>
+                2 different ways to do this
+                1)
+                -	Go to RTC
+                -	Go to your product backlog (Plans / All Plans – Product Backlog should be at bottom of list)
+                -	Hover over your User Story and drop down opens up to the left
+                -	On drop down choose Plan For
+                -	Either select an Iteration from the list
+                -	Or browse and choose Iteration from list and click on OK
+                -	Click on Save
+
+            <p>
+                2)
+                -	Go to RTC
+                -	Go to your product backlog (Plans / All Plans – should be at bottom of list)
+                -	Click on your User Story
+                -	On Planned For box click on the drop down
+                -	select an Iteration from the list
+                -	if you need to see more choices click on the 3 dots next to the open line
+                -	click on Save
+
+            <p>
+                Moving a User Story from one Iteration to another
+            <p>
+                -	if your User Story is not finished by the end of the Iteration it is in, then you can move it and its Tasks that are not completed to another Iteration
+            <p>
+                -	see the attached document
+                Moving User Story and Tasks to the Next Iteration.docx
+            </p>
+
+
+            <h3><a name="statusdevready">Set status to Dev Ready</a></h3>
+            <p>                Setting status of User Story to Dev Ready & Owning User Story
+            <p>
+                -	Go to the Iteration you put your User Story in (Plans / All Plans)
+            <p>
+                -	If you do not see your User Story on the Taskboard, click on the Refresh icon (2 arrows in a circle pattern on top right to the left of Save button)
+            <p>
+                -	From the taskboard click on your User Story
+            <p>
+                -	You will now be on the Overview tab of the User Story
+            <p>
+                -	drop down the Owned By box and select your name
+            <p>
+                -	drop down the Story Points box and choose your estimate of the size of this User Story (3, 5, 8, 13 or 20 – small to large)
+            <p>
+                -	at the bottom of the Overview tab is the Discussion Box
+            <p>
+                -	under this box is a box labeled “Add a comment…”
+            <p>
+                -	click anywhere in this comment box and it opens up
+            <p>
+                -	now enter - AppScan not applicable - this is not a Web-based application
+            <p>
+                -	Click on Save (upper right corner of screen)
+            <p>
+                -	the status for your User Story can be found on the upper right corner (below Save button)
+            <p>
+                -	values for Status are on far left column of User Story Lifecycle diagram
+            <p>
+                -	the status will probably be New or Define (if it is already Dev Ready then skip down to the next section - Steps to take for “Decompose into Tasks Box”)
+            <p>
+                -	drop down the status box and change the status until the status becomes Dev Ready (see below bullets)
+            <p>
+                -	if the user story currently has a Define status, then drop down the status box and select Complete Definition Action
+            <p>
+                -	click on Save (the status will change to Dev Ready)
+            <p>
+                -	go to the next section Steps to take for “Decompose into Tasks Box”
+            <p>  
+                -	if the user story currently has a New status, then drop down the status box and select Start Defining Action
+            <p>
+                -	click on Save (the status will change to Define)
+            <p>
+                -	now drop down the status box and select Complete Definition Action
+            <p>
+                -	click on Save (the status will change to Dev Ready)
+            <p>
+                -	go to the next section Steps to take for “Decompose into Tasks Box”
+            </p>
+
+
+            <h3><a name="decomposetasksbox">Decompose into Tasks Box</a></h3>
+            <p>
+                Steps to take for “Decompose into Tasks Box” on User Story Lifecycle diagram
+            <p> Create the Acceptance Testing Task for the User Story
+            <p> -	Go to the Iteration you put your User Story in (Plans / All Plans)
+            <p> -	Click on User Story from Task Board
+            <p> -	Click on Links tab
+            <p> -	Drop down Add Related Box
+            <p> -	Select Add Children
+            <p> -	Drop Down Type Box
+            <p> -	Select Task
+            <p> -	Select Create Linked Task (Bottom left of Select Work Items box)
+            <p> -	Enter a Summary (example is Run enrollment batch process and confirm results)
+            <p> -	Filed Against Drop Down, choose your product (BlueAdvantage Enrollment or MembershipSupportSystems)
+            <p> -	Owned By drop down, choose person performing the task
+            <p> -	Planned For drop down,  select the Iteration you want the task to be in
+            <p>   -	Click on Save
+            <p>    -	drop down the Task status box (upper right corner below Save button) and select Start Working action
+            <p>
+                -	Click on Save (changes the Task Status to In Progress)
+            </p>
+
+
+            <h3><a name="createpeerreviewtasks">Create Peer Review Tasks</a></h3>
+            <p> Create the Peer Review Task for the User Story
+            <p>	Back arrow back to User Story
+            <p>	Click on Links tab
+            <p>	Drop down Add Related Box
+            <p>	Select Add Children
+            <p>	Drop Down Type Box
+            <p>	Select Task
+            <p>	Select Create Linked Task (Bottom left of Select Work Items box)
+            <p>	Enter a Summary (Peer review)
+            <p>	Filed Against Drop Down, choose your product (BlueAdvantage Enrollment or MembershipSupportSystems)
+            <p>	Owned By drop down, choose person performing the task (someone other than you)
+            <p>	Planned For drop down,  select the Iteration you want the task to be in
+            <p>	Click on Save
+            <p>	drop down the Task status box (upper right corner below Save button) and select Start Working action
+            <p>	Click on Save (changes the Task Status to In Progress)
+
+            <p>Verify that the tasks are out there for your User Story
+            <p>	Back arrow back to User Story
+            <p>	On right side of screen under Quick Information should now see Children (2)
+            <p>	Hover over it and will show the 2 tasks you created
+            <p>	Or click on Links tab and at bottom of screen will see Children and the 2 tasks you created  </p>
+            <p> Next steps before going to “Complete All Tasks box” on User Story Lifecycle diagram
+            <p> Setting status of User Story to Dev in Progress
+            <p>	Now click on the Overview tab
+            <p>	drop down the status box and select Start Development Action
+            <p>	click on Save (the status will change to Dev in Progress)</p>
+
+            <h3><a name="completealltasks">Complete All Tasks Box</a></h3>
+            <p>Steps to take for “Complete All Tasks Box” on User Story Lifecycle diagram
+            <p>	now perform your work on the User Story
+            <p>	once you are done with the changes for this User Story and you are ready for UAT testing <p> then you can go on to ALM to create and execute your Test Cases and attach the UAT approval
+            <p>	go to SLM ALM Steps document
+            </p>
+
+            <h3><a name="setchildtaskstodone">Set Child Tasks to Done</a></h3>
+            <p>Set Child Tasks under User Story to Done
+            <p>	make sure you have finished your testing in ALM (all Test Cases passed and UAT approval emails attached – see SLM ALM Steps document)
+            <p>	log back into RTC
+            <p>	Go to Plans / All Plans and select the current Iteration your User Story is in
+            <p>	The Iteration’s Task Board is returned
+            <p>	Go to the Tasks under your User Story
+            <p>	Either click on the Task from the Task Board
+            <p>	Or click on the User Story from the Task Board
+            <p>	And then click on Links tab
+            <p>	And then click on the Task at the bottom of window under Children
+            <p>	drop down the Task status box (upper right corner below Save button) and select Complete action
+            <p>	Click on Save (changes the Task Status to Done)
+            <p>	Back arrow back to the list of Tasks, and do the same for any remaining Tasks under this User Story
+
+            <p> Verifying Child Tasks under User Story are set to Done
+            <p>  2 different ways to do this:
+            <p>   1)
+            <p>	Go to the Iteration you put your User Story in (Plans / All Plans)
+            <p>	Click on User Story from Task Board
+            <p>	Click on Links tab
+            <p>	At bottom of window under Children, all of the tasks should now have a line through them indicating they are in a Done status
+            <p>	If not, click on the refresh icon (2 arrows in a circle pattern on top right to the left of Save button)
+
+            <p>    2)
+            <p>	Go to the Iteration you put your User Story in (Plans / All Plans)
+            <p>	Find the Child Tasks on the Task Board
+            <p>	They should all be under the Closed column now, indicating they are in a Done status
+            <p>	If not, click on the refresh icon (2 arrows in a circle pattern on top right to the left of Save button)    </p>
+
+
+            <h3><a name="attachuserstory">Attach User Story</a></h3>
+            <p>Attach to the User Story, Stakeholder Approval of User Story
+            <p>	Send an email to the Stakeholder requesting approval to move the User Story to Production
+            <p>	On subject line reference the User Story number and name
+            <p>	Attach this email to the User Story by doing the following
+            <p>	Click on your User Story from the Iteration’s Task Board
+            <p>	Click on the Links tab
+            <p>	Click on the box (Drop files to add them…) just below Attachments
+            <p>	Navigate to where you stored the Stakeholder approval email
+            <p>	Double click the email to attach it here
+            <p>	Click on Save
+            <p>	Next step is to request SQA to approve the User Story, but before doing that – see the checklist below
+
+            <p>Checklist before requesting SQA to approve the User Story
+            <p>	Cover Status in ALM must state Passed (See SLM ALM Steps doc)
+            <p>	In ALM Test Lab you must have at least one Test Case and at least one UAT approval attached
+            <p>	In ALM Test Lab make sure all of the Peer Review questions have been answered
+            <p>	In RTC, make sure that all the child Tasks under the User Story are marked Done
+            <p>	In RTC, make sure you entered Appscan not applicable comment in Discussion box on Overview tab of User Story
+            <p>	In RTC, attached Stakeholder approval of User Story on Links tab
+            </p>
+
+
+            <h3><a name="requestsqaapproval">Requesting SQA Approval of User Story</a></h3>
+            <p> Requesting SQA to approve the User Story
+            <p>	Click on the Approvals tab (on menu below Summary field)
+            <p> If on this screen all you see is the text “Select an approval type to add approvals to your work item”, then do the following (otherwise skip to next section)
+            <p>		Click Add Approval
+            <p>		Then type in SQA Approval in the name box
+            <p>		Click the Add Approvers link
+            <p>		In the Select Users Dialog search for SQA.
+            <p>		Click GM, I/S SQA – SQAapprover – Alternate_Billing, BCBST_OCM Team, Mobile
+            <p>		Click Add and Close
+            <p>		Click the Save Button.</p>
+
+
+            <h3><a name="productownerapproval">Product Owner Approval</a></h3>
+            <p>Product Owner Approval
+            <p>	You will get an email back from SQA when the User Story has been reviewed and approved
+            <p>	The SQA approver will change the status of the User Story to Verified
+            <p>	At this point you can IM Lamar to notify him that your User Story will need Product Owner approval
+            <p>	Make sure that you have gotten the Stakeholder approval to move this User Story to production (attached in Links tab of User Story)
+            <p>	Once Lamar does the Product Owner approval, he will change the status of the User Story to Production Ready
+            <p>	At this point you are ready to implement your User Story to Production
+            <p>	See the SLM Release Work Item Steps document  </p>
+
+            <!-- End text of SLM RTC Steps document -->
+
+
+            <!-- Begin text of SLM Defect Steps document -->
+            <h3><a name="defectcreated">Follow the Defect Lifecycle diagram</a></h3>
+            <p>Steps to take for “Defect is Created and Synced to RTC” on Defect Lifecycle Diagram
+            <p>	You may want to create a Change Ticket  for this Defect now, since you will need at least a 7 day window between the time the Change Ticket is created and when you install to Production
+            <p>	Log into ALM for the product this Defect is in
+            <p>	Click on Defects folder (far left column)
+            <p>	Click on New Defect selection (first from left on top menu bar)
+            <p>	You will now be on the Details tab for New Defect
+            <p>	In Summary field give a short summary of the defect
+            <p>	In Description field give a more detailed description of the Defect
+            <p>	Drop down Record Type field and select Defect: Development
+            <p>	For the PPM Project field enter PS421737 for BlueAdvantage Enrollment or PS421756 for Membership Support Systems
+            <p>	Drop down Severity field and make the appropriate selection
+            <p>	Drop down Application field and select your application
+            <p>	Drop down Environment field and select Production
+            <p>	Drop down Workaround field and make the appropriate selection
+            <p>	Drop down Complexity field and select a choice
+            <p>	Now click on the Business Impact tab (just below the Summary description)
+            <p>	Enter the Business Impact
+            <p>	If Workaround was Yes, then click on the Workaround Details tab (just below the Summary description)
+            <p>	Enter the Workaround description
+            <p>	Click on Submit and the new defect will now be created
+            <p>	Click on Close, unless creating another Defect
+            <p>	Make note of the Defect ID number associated with this Defect, this will be referenced later in ALM when creating the test case in the Test Plan folder
+            <p>	The initial Status and Sub<p>Status of the Defect will be New / Pending Assignment
+            <p>	If you are ready to work on this Defect then you can change the Sub<p>Status to Repair In Process (you do not have to do this now, can wait until defect work is done and then change the Sub<p>Status)
+            <p>	If you want to change the Sub<p>Status now, then click on the Defect and on the Details tab, drop down the Sub<p>Status field and select Repair in Process then click on OK
+            <p>	It may also prompt you to add a comment (you can add a blank comment if you wish)
+            <p>	This will cause the Status field to change to Open   
+            </p>
+
+
+            <h3><a name="plantoiteration">Plan to an Iteration</a></h3>
+            <p>
+            <p>	Log into the RTC for product this Defect is in
+            <p>	Creation of Defect in ALM causes it to automatically sync to the RTC
+            <p>	Now that the defect has been created in ALM it will initially reside on the product backlog in RTC
+            <p>	To find the Defect in the product backlog of RTC
+            <p>	Go to Plans / All Plans and click on the Product Backlog
+            <p>	Drop down the Exclude  field (above the Summary list) and uncheck the Execution Items field
+            <p>	Now you should see your new Defect in the list returned
+            <p>	Click on the Defect to open it up
+            <p>	You will now be on the Overview tab of the Defect
+            <p>	Notice the Type field is Defect and not User Story
+            <p>	On Planned For box click on the drop down
+            <p>	select an Iteration from the list
+            <p>	if you need to see more choices click on the 3 dots next to the open line
+            <p>	Click on Save (upper right corner of screen)   
+            <p>	Go to the Iteration you put your Defect in (Plans / All Plans)
+            <p>	On the Task board of this Iteration you will find the Defect under the Open Column (2nd column from left) not the Story column (since it is not a User Story)
+            <p>	If you do not see your Defect on the Task board, click on the Refresh icon (2 arrows in a circle pattern on top right to the left of Save button)
+            <p>	From the task board click on your Defect
+            <p>	You will now be on the Overview tab of the Defect
+            <p>	drop down the Owned By box and select your name
+            <p>	drop down the Points box and choose your estimate of the size of this Defect (3, 5, 8, 13 or 20 – small to large)
+            <p>	at the bottom of the Overview tab is the Discussion Box
+            <p>	under this box is a box labeled “Add a comment…”
+            <p>	click anywhere in this comment box and it opens up
+            <p>	now enter <p> AppScan not applicable <p> this is not a Web<p>based application
+            <p>	Click on Save (upper right corner of screen)
+            <p>	the status for your Defect can be found on the upper right corner (below Save button)
+            <p>	values for Status are on far left column of the Defect Lifecycle diagram
+            <p>	the status for the Defect will initially be New
+            <p>	drop down the status box and select the Open action
+            <p>	click on Save (the status will change to Open)
+            <p>	drop down the status box and select the Assign to Dev action
+            <p>	click on Save (the status will change to Assigned to Dev)
+            <p>	go to the next section Steps to take for “Decompose into Tasks Box”  
+            </p>
+
+
+
+            <h3><a name="defectdecompose">Decompose into Tasks Box</a></h3>
+            <p>
+            <p>Create the Acceptance Testing Task for the Defect
+            <p>	Go to the Iteration you put your Defect in (Plans / All Plans)
+            <p>	Click on the Defect from the Task Board (under Open column)
+            <p>	Click on Links tab
+            <p>	Drop down Add Related Box
+            <p>	Select Add Children
+            <p>	Drop Down Type Box
+            <p>	Select Task
+            <p>	Select Create Linked Task (Bottom left of Select Work Items box)
+            <p>	Enter a Summary (example is Run enrollment batch process and confirm results)
+            <p>	Filed Against Drop Down, choose your product (BlueAdvantage Enrollment or MembershipSupportSystems)
+            <p>	Owned By drop down, choose person performing the task
+            <p>	Planned For drop down,  select the Iteration you want the task to be in
+            <p>	Click on Save
+            <p>	drop down the Task status box (upper right corner below Save button) and select Start Working action
+            <p> Click on Save (changes the Task Status to In Progress)
+            <p> Create the Peer Review Task for the Defect
+            <p>	Back arrow twice back to the Defect screen
+            <p>	Click on Links tab
+            <p>	Drop down Add Related Box
+            <p>	Select Add Children
+            <p>	Drop Down Type Box
+            <p>	Select Task
+            <p>	Select Create Linked Task (Bottom left of Select Work Items box)
+            <p>	Enter a Summary (Peer review)
+            <p>	Filed Against Drop Down, choose your product (BlueAdvantage Enrollment or MembershipSupportSystems)
+            <p>	Owned By drop down, choose person performing the task (someone other than you)
+            <p>	Planned For drop down,  select the Iteration you want the task to be in
+            <p>	Click on Save
+            <p>	drop down the Task status box (upper right corner below Save button) and select Start Working action
+            <p>	Click on Save (changes the Task Status to In Progress)
+
+            <p> Verify that the tasks are out there for your Defect
+            <p>	Back arrow twice back to the Defect Overview tab
+            <p>	On right side of screen under Quick Information should now see Children (2)
+            <p>	Hover over it and will show the 2 tasks you created
+            <p>	Or click on Links tab and at bottom of screen will see Children and the 2 tasks you created
+            </p>
+
+
+
+            <h3><a name="defectbeforecompletealltasks">Steps before going to “Complete All Tasks box”</a></h3>
+            <p>
+            <p>Setting status of Defect to In Progress
+            <p>	Now click on the Overview tab of the Defect
+            <p>	drop down the status box and select Start Working Action
+            <p>	click on Save (the status will change to In Progress)
+
+            <p>  Steps to take for “Complete All Tasks Box” on Defect Lifecycle diagram
+            <p>	now perform your work on the Defect
+            <p>	once you are done with the changes for this Defect and you are ready for UAT testing <p> then you can go on to ALM to create and execute your Test Cases and attach the EOT
+            <p> go to SLM ALM Steps document
+            <p>	Set Child Tasks to Done
+            <p>	make sure you have finished your testing in ALM for the Defect
+            <p>	see ALM Checklist at end of SLM ALM Steps document
+            <p>	In Defect folder in ALM make sure the Defect status is set to Fixed / Resolved (see SLM ALM Steps document)
+            <p>	log back into RTC
+            <p>	Go to Plans / All Plans and select the current Iteration your Defect is in
+            <p>	The Iteration’s Task Board is returned
+            <p>	Go to the Tasks under your Defect
+            <p>	Either click on the Task from the Task Board
+            <p>	Or click on the Defect from the Task Board
+            <p>	And then click on Links tab
+            <p>	And then click on the Task at the bottom of window under Children
+            <p>	drop down the Task status box (upper right corner below Save button) and select Complete action
+            <p>	Click on Save (changes the Task Status to Done)
+            <p>	Back arrow back to the list of Tasks, and do the same for any remaining Tasks under this Defect
+
+            <p> Verifying Child Tasks under the Defect are set to Done
+            <p>	 2 different ways to do this:
+            <p>	Go to the Iteration you put your Defect in (Plans / All Plans)
+            <p>	Click on the Defect from the Task Board
+            <p>	Click on Links tab
+            <p>	At bottom of window under Children, all of the tasks should now have a line through them indicating they are in a Done status
+            <p>	If not, click on the refresh icon (2 arrows in a circle pattern on top right to the left of Save button)
+            <p>	or
+            <p>	Go to the Iteration you put your Defect in (Plans / All Plans)
+            <p>	Find the Child Tasks on the Task Board
+            <p>	They should all be under the Closed column now, indicating they are in a Done status
+            <p>	If not, click on the refresh icon (2 arrows in a circle pattern on top right to the left of Save button) or PF5  
+            </p>
+
+            <h3><a name="defectcompletealltasks">Checklist before SQA review</a></h3>
+            <p>
+            <p>	In ALM Test Lab you must have at least one Test Case
+            <p>	Each Test Case must have been passed and have a EOT attached
+            <p>	In ALM Test Lab you must have a Peer Review with all the questions answered
+            <p>	In ALM Defect folder, the Defect Status/Sub<p>Status should be Fixed/Resolved
+            <p>	In RTC, make sure that all the child Tasks under the Defect are marked Done
+            <p>	In RTC, make sure you entered Appscan not applicable comment in Discussion box on Overview tab of Defect
+            </p>
+
+
+
+            <h3><a name="defectbeforesqareview">Requesting SQA to review the Defect</a></h3>
+            <p>
+            <p> Requesting SQA to review the Defect
+            <p>	Go to the Iteration you put your Defect in (Plans / All Plans)
+            <p>	Click on the Defect from Task Board
+            <p>	drop down the status box (below Save button) and select Verify action
+            <p>	click on Save (the status will change to Verified)
+            <p>	Now add SQA as a subscriber to your Defect
+            <p>	Click on Links tab
+            <p>	Subscribers Box is on right side of screen
+            <p>	Click on +Add
+            <p>	Enter SQA
+            <p>	Select GM, I/S SQA and click on OK
+            <p>	Click on Save
+            <p>	SQA will now be notified to do a Defect review
+            <p>	Just to be safe, send SQA an email, notifying them that you have requested a Defect review
+            <p>	In the email have subject line “Requesting Review of Defect # (from RTC) /  Defect ID # (from ALM)” and in the text reference the folder path in ALM where they can find the Test results (Test Lab folder path – Iteration folder \ Defect folder)
+            <p>	You will get an email back from SQA when the Defect has been reviewed and approved
+            <p>	At this point you are ready to implement your Defect to Production
+            <p>	See the SLM Release Work Item Steps document
+            </p>
+
+
+
+
+                <!-- End text of SLM RTC Defect document -->
+
+
+            
+
+</div>
+    </div>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+        
+
+    
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Chrome","requestId":"23411429e3ac46939c7f5b418871e400"}
+</script>
+<script type="text/javascript" src="http://localhost:38344/8533b7f0358c4e3d851b49d29fa0ca86/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+</body>
+</html>
