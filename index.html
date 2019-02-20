@@ -14,16 +14,11 @@
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-    
+
 </head>
 <body>
-    
-    
-        
 
 
-
-    
     <div class="wrapper">
         <nav id="sidebar">
             <div class="sidebar-header">
@@ -62,7 +57,7 @@
                                     <a href="#productownerapproval">Product Owner Approval</a>
                                 </li>
                         </ul>
-                    </li>                
+                    </li>
                     <li class="active">
                         <a href="#defectsteps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Defect Steps</a>
                         <ul class="collapse list-unstyled" id="defectsteps">
@@ -76,10 +71,7 @@
                                     <a href="#defectdecompose">Decompose into Tasks Box</a>
                                 </li>
                                 <li>
-                                    <a href="#defectbeforecompletealltasks">steps before going to "Complete All Tasks box"</a>
-                                </li>
-                                <li>
-                                    <a href="#defectcompletealltasks">Steps for "Complete All Tasks Box" </a>
+                                    <a href="#defectbeforecompletealltasks">Steps before going to "Complete All Tasks box"</a>
                                 </li>
                                 <li>
                                     <a href="#defectbeforesqareview">Checklist before SQA review</a>
@@ -88,17 +80,97 @@
                                     <a href="#defectrequestsqa">Requesting SQA to review the Defect</a>
                                 </li>
                         </ul>
-                    </li>                
+                    </li>
                     <li class="active">
-                        <a href="#almsteps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ALM Steps</a>
-                        <ul class="collapse list-unstyled" id="almsteps">
+                        <a href="#almplansteps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ALM Test Plan Steps</a>
+                        <ul class="collapse list-unstyled" id="almplansteps">
+                                <li>
+                                    <a href="#almtestplancreatetest">Test Plan (Create test cases and link them to a User Story or Defect)</a>
+                                </li>
+                                <li>
+                                    <a href="#almtestplandetails">Details Tab</a>
+                                </li>
+                                <li>
+                                    <a href="#almtestplandesignsteps">Design Steps Tab</a>
+                                </li>
+                                <li>
+                                    <a href="#almtestplanreqcoverage">Req Coverage Tab (if creating a Test Case for a User Story)</a>
+                                </li>
+                                <li>
+                                    <a href="#almtestplanlinkeddefects">Linked Defects Tab (if creating a Test Case for a Defect)</a>
+                                </li>
                         </ul>
-                    </li>                
+                    </li>
+
+
+
+					            <!-- Begin text of ALM Test Lab Steps document -->
+
+
+                    <li class="active">
+                        <a href="#almlabsteps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ALM Test Lab Steps</a>
+                        <ul class="collapse list-unstyled" id="almlabsteps">
+                                <li>
+                                    <a href="#almtestlabacceptance">Create the Acceptance Testing Test Set (set of Test Cases) for the User Story or Defect </a>
+                                </li>
+                                <li>
+                                    <a href="#almtestlabdetails">Details Tab</a>
+                                </li>
+                                <li>
+                                    <a href="#almtestlabselecttestsus">Select Tests for a User Story (add Test Cases to the Test Set)</a>
+                                </li>
+                                <li>
+                                    <a href="#almtestlabselecttestdefect">Select Tests for a Defect (add Test Cases to the Test Set)</a>
+                                </li>
+                                <li>
+                                    <a href="#almtestlabcreatepeerreview">Create the Peer Review Test Set for the User Story or Defect</a>
+                                </li>
+                                <li>
+                                    <a href="#almtestlabdetailstab">Details Tab</a>
+                                </li>
+                                <li>
+                                    <a href="#almtestlabselecttests">Select Tests</a>
+                                </li>
+                                <li>
+                                    <a href="#almtestlabexecutetest">Execute Test Cases for a User Story or Defect</a>
+                                </li>
+                                <li>
+                                    <a href="#almtestlabuatapproval">Attach UAT approval for User Story or EOT for Defect to Test Cases</a>
+                                </li>
+                                <li>
+                                    <a href="#almtestlabpeerreview">Execute Peer Review Test Set for a User Story or Defect</a>
+                                </li>
+                                <li>
+                                    <a href="#almtestlabnextsteps">Next steps after Testing is done (ALM Checklist)</a>
+                                </li>
+                                <li>
+                                    <a href="#almtestlabuserstory">If this testing is for a User Story</a>
+                                </li>
+                                <li>
+                                    <a href="#almtestlabdefect">If this testing is for a Defect</a>
+                                </li>
+                        </ul>
+                    </li>
                     <li class="active">
                         <a href="#releaseworkitemsteps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Release Work Item Steps</a>
                         <ul class="collapse list-unstyled" id="releaseworkitemsteps">
+								<li>
+									<a href="#createreleaseworkitem">Creating the Release Work Item</a>
+								</li>
+								<li>
+									<a href="#linktoreleaseworkitem">Linking User Story(ies) or Defect(s) to the Release Work Item</a>
+								</li>
+								<li>
+									<a href="#addapprovalreleaseworkitem">Adding Approvals to the Release Work Item</a>
+								</li>
+								<li>
+									<a href="#addapproverreleaseworkitem">Adding Approvers to the Release Work Item</a>
+								</li>
+								<li>
+									<a href="#releaseid">Release ID</a>
+								</li>
                         </ul>
-                    </li>                
+                    </li>
             </ul>
         </nav>
         <!-- Page Content  -->
@@ -114,7 +186,7 @@
                     </button>
                     <input type="submit" value="Search" class="btn btn-default" />
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
+                        <!-- <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">Page</a>
                             </li>
@@ -127,7 +199,8 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Page</a>
                             </li>
-                        </ul>
+                        </ul>  -->
+        <div id="content">
                     </div>
                 </div>
             </nav>
@@ -210,7 +283,7 @@
                 -	click on Save (the status will change to Dev Ready)
             <p>
                 -	go to the next section Steps to take for "Decompose into Tasks Box"
-            <p>  
+            <p>
                 -	if the user story currently has a New status, then drop down the status box and select Start Defining Action
             <p>
                 -	click on Save (the status will change to Define)
@@ -389,7 +462,7 @@
             <p>	If you are ready to work on this Defect then you can change the Sub<p>Status to Repair In Process (you do not have to do this now, can wait until defect work is done and then change the Sub<p>Status)
             <p>	If you want to change the Sub<p>Status now, then click on the Defect and on the Details tab, drop down the Sub<p>Status field and select Repair in Process then click on OK
             <p>	It may also prompt you to add a comment (you can add a blank comment if you wish)
-            <p>	This will cause the Status field to change to Open   
+            <p>	This will cause the Status field to change to Open
             </p>
 
 
@@ -408,7 +481,7 @@
             <p>	On Planned For box click on the drop down
             <p>	select an Iteration from the list
             <p>	if you need to see more choices click on the 3 dots next to the open line
-            <p>	Click on Save (upper right corner of screen)   
+            <p>	Click on Save (upper right corner of screen)
             <p>	Go to the Iteration you put your Defect in (Plans / All Plans)
             <p>	On the Task board of this Iteration you will find the Defect under the Open Column (2nd column from left) not the Story column (since it is not a User Story)
             <p>	If you do not see your Defect on the Task board, click on the Refresh icon (2 arrows in a circle pattern on top right to the left of Save button)
@@ -428,7 +501,7 @@
             <p>	click on Save (the status will change to Open)
             <p>	drop down the status box and select the Assign to Dev action
             <p>	click on Save (the status will change to Assigned to Dev)
-            <p>	go to the next section Steps to take for "Decompose into Tasks Box"  
+            <p>	go to the next section Steps to take for "Decompose into Tasks Box"
             </p>
 
 
@@ -474,8 +547,6 @@
             <p>	Or click on Links tab and at bottom of screen will see Children and the 2 tasks you created
             </p>
 
-
-
             <h3><a name="defectbeforecompletealltasks">Steps before going to "Complete All Tasks box"</a></h3>
             <p>
             <p>Setting status of Defect to In Progress
@@ -514,10 +585,10 @@
             <p>	Go to the Iteration you put your Defect in (Plans / All Plans)
             <p>	Find the Child Tasks on the Task Board
             <p>	They should all be under the Closed column now, indicating they are in a Done status
-            <p>	If not, click on the refresh icon (2 arrows in a circle pattern on top right to the left of Save button) or PF5  
+            <p>	If not, click on the refresh icon (2 arrows in a circle pattern on top right to the left of Save button) or PF5
             </p>
 
-            <h3><a name="defectcompletealltasks">Checklist before SQA review</a></h3>
+            <h3><a name="defectbeforesqareview">Checklist before SQA review</a></h3>
             <p>
             <p>	In ALM Test Lab you must have at least one Test Case
             <p>	Each Test Case must have been passed and have a EOT attached
@@ -529,7 +600,7 @@
 
 
 
-            <h3><a name="defectbeforesqareview">Requesting SQA to review the Defect</a></h3>
+            <h3><a name="defectrequestsqa">Requesting SQA to review the Defect</a></h3>
             <p>
             <p> Requesting SQA to review the Defect
             <p>	Go to the Iteration you put your Defect in (Plans / All Plans)
@@ -551,13 +622,377 @@
             <p>	See the SLM Release Work Item Steps document
             </p>
 
+            <!-- End text of SLM RTC Defect document -->
 
 
 
-                <!-- End text of SLM RTC Defect document -->
+
+            <!-- Begin text of ALM Test Plan Steps document -->
 
 
-            
+
+            <h3><a name="almtestplancreatetest">Test Plan (Create test cases and link them to a User Story or Defect)</a></h3>
+            <p>
+			<p>	Select Test Plan (far left column)
+			<p>	Choose the existing folder (or create a new folder) you want to put your test case under
+			<p>	You can reuse existing test cases from the Test Plan
+			<p>	Click on the existing test case, then skip down to either the
+			<p>	Req Coverage tab section if this is for a User Story
+			<p>	Linked Defects tab if this is for a Defect
+			<p>	To create a new folder, click once on the parent folder and click on new folder icon
+			<p>	New folder icon (first from left)  is on top menu bar
+			<p>	Do the steps below for each Test Case you want to create for a specific User Story or Defect
+			<p>	Click on the beaker icon (second from left) on top menu bar to add a new test case
+            </p>
+
+            <h3><a name="almtestplandetails">Details Tab</a></h3>
+            <p>
+			<p>	Enter the name of the Test Case in the Details window that pops up
+			<p>	Click on OK
+            </p>
+
+            <h3><a name="almtestplandesignsteps">Design Steps Tab</a></h3>
+            <p>
+			<p>	On the right side of the screen you are now presented with a new window with several tabs at the top (currently on the Details tab)
+			<p>	A Test Case is broken down into Design Steps (must have at least one design step)
+			<p>	Do the steps below for each Design Step you want to create for a specific Test Case
+			<p>	Click on the Design Steps tab
+			<p>	Click on shoe<p>asterisk icon (far left icon just below the tabs menu) to add a new step to this test case
+			<p>	Enter a description and expected result for this test step
+			<p>	Example for description is Run the TRR processing jobs
+			<p>	Example for expected result is The TRR processing job stream finishes successfully and the MERV records are applied correctly
+			<p>	Click on OK
+            </p>
+
+            <h3><a name="almtestplanreqcoverage">Req Coverage Tab (if creating a Test Case for a User Story)</a></h3>
+            <p>
+			<p>	Click on Req Coverage tab
+			<p>	Click on Select Req (far left choice just below the tabs menu)
+			<p>	New window (Requirement Tree) to the far right appears
+			<p>	Click on the arrow just to the left of the Requirements folder (will open this folder)
+			<p>	Returns a list of User Stories
+			<p>	Click once on the User Story that the test case you are creating is for
+			<p>	Click on the Green Arrow (far left icon just below the Requirement Tree tab)
+			<p>	Now you have linked this Test Case to this User Story
+            </p>
+
+            <h3><a name="almtestplanlinkeddefects">Linked Defects Tab (if creating a Test Case for a Defect)</a></h3>
+            <p>
+			<p>	If you don't remember the Defect ID # you created earlier, then go back to the Defects folder to get it (will need it in this step)
+			<p>	Click on Linked Defects tab
+			<p>	Click on Link Existing Defect (second from left icon just below the tabs menu)
+			<p>	The Link Existing Defect window appears
+			<p>	Enter the Defect ID  # you created earlier into this window and then click on Link
+			<p>	Now you have linked this Test Case to your Defect
+			<p>	On the Defects folder in the left column for this Defect you will now see a chain link icon signifying you have linked a test case to this Defect
+			<p>	Refresh the screen if you don't see it (2 green circle arrows or PF5)
+            </p>
+
+
+            <!-- End text of ALM Test Plan Steps document -->
+
+
+            <!-- Begin text of ALM Test Lab Steps document -->
+
+
+
+            <h3><a name="almtestlabacceptance">Create the Acceptance Testing Test Set (set of Test Cases) for the User Story or Defect   </a></h3>
+            <p>
+			<p>	Select Test Lab (far left column)
+			<p>	Create a new folder (with name of the Iteration that the User Story or Defect is in) under the Root folder, if not already there
+			<p>	To create a new folder, highlight the parent folder and click on new folder icon (or right click and select new folder)
+			<p>	New folder icon (first from left)  is on top menu bar
+			<p>	Create a new folder with User Story Number/Name or Defect #/Name under the Iteration folder
+			<p>	Click once on the User Story or Defect folder to highlight it
+			<p>	Click on the beaker icon (second from left) on top menu bar to add a new test set
+            </p>
+
+            <h3><a name="almtestlabdetails">Details Tab</a></h3>
+            <p>
+			<p>	Enter Acceptance Testing in the name field on the Details window that pops up
+			<p>	Click on OK
+            </p>
+
+            <h3><a name="almtestlabselecttestsus">Select Tests for a User Story (add Test Cases to the Test Set)</a></h3>
+            <p>
+			<p>	On the right side of the screen you are now presented with a new window and several tabs at the top (currently on the Execution Grid tab)
+			<p>	Click on Select Tests (just above the Details tab on tabs menu)
+			<p>	New window (Test Plan Tree/Requirements Tree) to the far right appears
+			<p>	If need to, expand this window (drag left vertical border line to the left more)
+			<p>	Click on the Requirements Tree tab
+			<p>	Click on the arrow just to the left of the Requirements folder (will open this folder)
+			<p>	Returns a list of User Stories
+			<p>	Click once on the User Story that the test set you are creating is for
+			<p>	Click on the Green Arrow (far left icon just below the Requirement Tree tab)
+			<p>	Select Yes if a pop up window appears asking you to confirm your choice
+			<p>	Now every Test Case that is linked to this User Story is put into this Test Set
+			<p>	Click on the X to the right of requirements tree tab to close the requirements window
+            </p>
+
+            <h3><a name="almtestlabselecttestdefect">Select Tests for a Defect (add Test Cases to the Test Set)</a></h3>
+            <p>
+			<p>	On the right side of the screen you are now presented with a new window and several tabs at the top (currently on the Execution Grid tab)
+			<p>	Click on Select Tests (just above the Details tab on tabs menu)
+			<p>	New window (Test Plan Tree/Requirements Tree) to the far right appears
+			<p>	If need to, expand this window (drag left vertical border line to the left more)
+			<p>	Click on the Test Plan Tree tab
+			<p>	Find the folder and test case that you created in the Test Plan for this Defect
+			<p>	Click once on the test case or on the folder if you have multiple test cases
+			<p>	Click on the Green Arrow (far left icon just below the Test Plan Tree tab)
+			<p>	Select Yes if a pop up window appears asking your to confirm your choice
+			<p>	Now your Test Case or Test Cases for this Defect are put into this Test Set
+			<p>	Click on the X to the right of requirements tree tab to close the requirements window
+            </p>
+
+            <h3><a name="almtestlabcreatepeerreview">Create the Peer Review Test Set for the User Story or Defect</a></h3>
+            <p>
+			<p>	Have the person performing the Peer Review do this
+			<p>	Select Test Lab (far left column)
+			<p>	If not already there, create a new folder (with name of the Iteration that the User Story or Defect is in) under the Root folder
+			<p>	To create a new folder, highlight the parent folder and click on new folder icon (or right click and select new folder)
+			<p>	New folder icon (first from left)  is on top menu bar
+			<p>	Create a new folder with User Story Number/Name or Defect #/Name under the Iteration folder
+			<p>	Click once on the User Story or Defect folder to highlight it
+			<p>	Click on the beaker icon (second from left) on top menu bar to add a new test set
+            </p>
+
+            <h3><a name="almtestlabdetailstab">Details Tab</a></h3>
+            <p>
+			<p>	Enter Peer Review in the name field on the Details window that pops up
+			<p>	Click on OK
+            </p>
+
+            <h3><a name="almtestlabselecttests">Select Tests </a></h3>
+            <p>
+			<p>	On the right side of the screen you are now presented with a new window and several tabs at the top (currently on the Execution Grid tab)
+			<p>	Click on Select Tests (just above the Details tab on tabs menu)
+			<p>	New window (Test Plan Tree/Requirements Tree) to the far right appears
+			<p>	Click on the Test Plan Tree tab
+			<p>	Click on the arrow just to the left of the Subject folder (will open this folder)
+			<p>	Returns a list of Test Case folders from the Test Plan
+			<p>	Click once on the Peer Review folder
+			<p>	Click on the Green Arrow (far left icon just below the Test Plan Tree tab)
+			<p>	Answer Yes to the next question, confirming your choice
+			<p>	Now the 18 Peer Review questions are added to the Peer Review Test Set
+			<p>	Click on the X to the right of requirements tree tab to close the requirements window
+            </p>
+
+            <h3><a name="almtestlabexecutetest">Execute Test Cases for a User Story or Defect</a></h3>
+            <p>
+			<p>	Select Test Lab (far left column)
+			<p>	Open the User Story or Defect folder to see the Test Sets underneath
+			<p>	Click on the Acceptance Testing Test Set that you want to use
+			<p>	In the right window, click on the Execution Grid tab
+			<p>	Click on the Test Case in the right window that you want to execute
+			<p>	Click on Run (top menu bar above test cases)
+			<p>	Manual Runner window pops up
+			<p>	Click on Begin Run (top menu bar)
+			<p>	Click on No Run under Status column and a drop down should now appear next to it
+			<p>	On the drop down select Passed
+			<p>	Now click on the square icon (End Run) at the far right of the top menu bar
+			<p>	If  your Test Case has multiple Design Steps, each step must be run like above and set to Passed
+			<p>	If your Test Set has multiple Test Cases,  each Test Case must be run like this
+            </p>
+
+            <h3><a name="almtestlabuatapproval">Attach UAT approval for User Story or EOT for Defect to Test Cases</a></h3>
+            <p>
+			<p>	User Story requires a UAT approval email attachment for each Test Case
+			<p>	Defect requires a EOT attachment for each Test Case, you do not need UAT approval
+			<p>	Click on the Test Set that you want to use
+			<p>	In the right window, click on the Execution Grid tab
+			<p>	Click on the Test Case in the right window that you want to add attachment to
+			<p>	Click on the paper clip icon (top menu bar above test cases)
+			<p>	Test Instance Details window appears
+			<p>	Click on the paper clip icon (on the Attach: menu bar)
+			<p>	Navigate to your UAT approval email or EOT and select it
+			<p>	The attachment should now show up in the Test Instance Details window
+			<p>	Click on OK
+			<p>	Now you are returned to the Test Case Window
+			<p>	There should now be a paper clip in the paper clip column for this Test Case
+			<p>	If your Test Set has multiple Test Cases, each Test Case must have a UAT approval attachment for a User Story or EOT attachment for a Defect
+            </p>
+
+            <h3><a name="almtestlabpeerreview">Execute Peer Review Test Set for a User Story or Defect </a></h3>
+            <p>
+			<p>	Select Test Lab (far left column)
+			<p>	Open the User Story or Defect folder to see the Test Sets underneath
+			<p>	Click on the Peer Review Test Set
+			<p>	In the right window, click on the Execution Grid tab
+			<p>	Peer Review Test Set window appears
+			<p>	Each row is a Peer Review question to be answered
+			<p>	For each row, click on the value in the Status column
+			<p>	On the drop down, select your answer (must be either Passed or N/A)
+			<p>	Be sure to click somewhere else off of the list of Peer Review questions when done
+			<p>	Otherwise the last question you were on may not reflect your update
+            </p>
+
+            <h3><a name="almtestlabnextsteps">Next steps after Testing is done (ALM Checklist)</a></h3>
+            <p>
+			<p>	In the Test Lab for your User Story or Defect
+			<p>	Check that your all your Test Cases have been Passed
+			<p>	For User Story, check that a UAT approval is attached to each Test Case
+			<p>	For Defect, check that a EOT is attached to each Test Case
+			<p>	Check that all of the Peer Review questions have been answered
+			<p>	Check that the Cover Status states Passed (this only applies to User Stories)
+			<p>	Select Requirements (far left column)
+			<p>	Select Requirements under this
+			<p>	Requirements window opens up to the right
+			<p>	Find your User Story in the list
+			<p>	Under the Direct Cover Status column, it should state Passed
+			<p>	If it does not, then you may not have Passed or executed all of your Test Cases
+            </p>
+
+            <h3><a name="almtestlabuserstory">If this testing is for a User Story </a></h3>
+            <p>
+			<p>	If you are satisfied that your testing is done, then return to the SLM RTC Steps  document and continue with Set Child Tasks to Done
+            </p>
+
+            <h3><a name="almtestlabdefect">If this testing is for a Defect</a></h3>
+            <p>
+			<p>	Click on Defects folder (far left column)
+			<p>	Click on your Defect ID
+			<p>	Drop down the Sub<p>Status field and select Repair Complete: Fixed
+			<p>	The Assigned To field will get wiped out, just drop down and add your User ID back
+			<p>	Drop down the Root Cause field and make a selection
+			<p>	Click on Add Comment and enter Ready for re<p>test
+			<p>	Click on Resolution (tabs menu at top) and summarize what you did to resolve the defect
+			<p>	Click on OK
+			<p>	The Defect Status in ALM will now be changed to Open and Sub<p>Status changed to Pending Retest (you will not be able to change the status yourself at this point)
+			<p>	This will automatically cause the status in RTC for this Defect to change to Ready to Retest
+			<p>	You will have to have someone else change these status to fixed / resolved
+			<p>	This can be anyone other than you (does not have to be the person that did the Peer review)
+			<p>	Whoever it is will go into this Defect ID and drop down the Sub<p>Status field and select Retest Passed
+			<p>	They will also click on Add Comment and enter a comment (or leave blank, do not have to enter an actual comment)
+			<p>	Click on OK
+			<p>	The Defect Status in ALM will now be changed to Fixed and Sub<p>Status changed to
+			Resolved
+			<p>	If you are satisfied that your testing is done, then return to the SLM Defect Steps  document and continue with Set Child Tasks to Done
+            </p>
+
+          <!--   <h3><a name="xxxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxxxxxxxxxxx</a></h3>
+            <p>
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+            </p>
+
+            <h3><a name="xxxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxxxxxxxxxxx</a></h3>
+            <p>
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
+            </p>
+-->
+
+
+
+            <!-- End text of ALM Test Lab Steps document -->
+
+
+
+
+
+            <!-- Begin text of Release Work Item Steps document -->
+
+
+            <h3><a name="createreleaseworkitem">Creating the Release Work Item</a></h3>
+            <p>
+			<p>	Log into the RTC
+			<p>	No matter where you are in the RTC there is a menu bar at the top of the screen that has the choices Project Dashboards, Work Items, Plan, etc.
+			<p>	Click on Work Items
+			<p>	Click on 'Create from Template', found at the bottom of the left column in the display box returned
+			<p>	Select Release Work Item from the choices and then click on Next
+			<p>	Then click on Finish
+			<p>	Now click on the Release ID number that is returned
+			<p>	Drop down the Filed Against field and select your Product Project area
+			<p>	Drop down the Planned For field and select the Iteration you will be implementing this User Story or Defect in
+			<p>	Drop down the Deployment Lead field and select yourself
+			<p>	Drop down the Action field (below Save button and to the left) and select the Start Working Action
+			<p>	Click on Save
+			<p>	The Release status is changed to In Progress
+            </p>
+
+            <h3><a name="linktoreleaseworkitem">Linking User Story(ies) or Defect(s) to the Release Work Item </a></h3>
+            <p>
+			<p>	Click on the Links tab (on menu below Summary field)
+			<p>	Click on Add Related drop down (bottom left of screen) and select Add Children
+			<p>	Select the User Story or Defect you intend to implement to Production from the list and then click on OK
+			<p>	You can link more than one User Story or Defect to this Release Work Item
+			<p>	Just select Add Children again and select the next User Story or Defect
+			<p>	If you do not see your User Story in the selection list, then that User Story is not in a Production Ready status
+			<p>	If you do not see your Defect in the selection list, then that Defect is either not in a Verified status or SQA has not approved it
+            </p>
+
+            <h3><a name="addapprovalreleaseworkitem">Adding Approvals to the Release Work Item</a></h3>
+            <p>
+			<p>	Click on the Approvals tab (on menu below Summary field)
+			<p>	If at the bottom of this screen all you see is the text 'Select an approval type to add approvals to your work item', then do the following (otherwise skip to next section)
+			<p>	Drop down the Add Approval field and select Add Approval
+			<p>	Click on the Unassigned_Approval name box and then click on the 'x' on the right of this box to delete this name (not the X at the end of this row)
+			<p>	Then type in SQA Approval in this name box
+			<p>	Drop down the Add Approval field and select Add Approval
+			<p>	Click on the Unassigned_Approval name box and then click on the 'x' on the right of this box to delete this name (not the X at the end of this row)
+			<p>	Then type in Release Manager Approval in this name box
+            </p>
+
+            <h3><a name="addapproverreleaseworkitem">Adding Approvers to the Release Work Item</a></h3>
+            <p>
+			<p>	Now click on Add Approvers under the SQA Approval name
+			<p>	Type in SQA and choose GM, I/S SQA and click on Add and Close
+			<p>	Drop down the Action field (below Save button and to the left) and select the Request SQA Review Action
+			<p>	Click on Save
+			<p>	The Release status is changed to Awaiting SQA Approval
+			<p>	Do NOT enter the Release Manager Approver yet, wait until SQA has approved the Release Work Item
+			<p>	Once SQA reviews and approves the Release Work Item, you will get an email back from Rational Team Concert showing the Release Work Item's status changed to Awaiting Production Approval
+			<p>	Now click on Add Approvers under the Release Manager Approval name
+			<p>	Type in either David Greene or Lamar Wyatt and click on Add and Close
+			<p>	Click on Save
+			<p>	After a few minutes IM either David or Lamar to notify them they have a Release Manager Approval to perform for Release Work Item #
+            </p>
+
+            <h3><a name="releaseid">Release ID</a></h3>
+            <p>
+            <p>	Once the Release Manager Approval has been done, you will get an email back from Rational Team Concert showing the Release Work Item's status changed to Production Ready
+			<p>	At the bottom of this email will be the 10 digit Release ID
+			<p>	Copy this Release ID to your Change Ticket (Release ID field is on page 1 of the Change Ticket)
+			<p>	Once the rest of the Change Ticket is filled out, you can then send it to Lamar for Assessment
+			<p>	If you lose the email referencing your Release ID or otherwise can't find it, it is now referenced on your Release Work Item in the RTC
+			<p>	Log into the RTC and click on the User Story you are implementing
+			<p>	Click on the Links tab
+			<p>	At the bottom of the screen under Parent is a link to you Release Work Item
+			<p>	Click on this link
+			<p>	The Release ID can be found on the Release Work Item's Overview tab, on the right column halfway down
+            </p>
+
+
+            <!-- End text of Release Work Item Steps document -->
+
+
+
+
+
 
 </div>
     </div>
@@ -583,9 +1018,9 @@
         });
     </script>
 
-        
 
-    
+
+
 
 <!-- Visual Studio Browser Link -->
 <script type="application/json" id="__browserLink_initializationData">
