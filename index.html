@@ -101,12 +101,6 @@
                                 </li>
                         </ul>
                     </li>
-
-
-
-					            <!-- Begin text of ALM Test Lab Steps document -->
-
-
                     <li class="active">
                         <a href="#almlabsteps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ALM Test Lab Steps</a>
                         <ul class="collapse list-unstyled" id="almlabsteps">
@@ -168,6 +162,43 @@
 								</li>
 								<li>
 									<a href="#releaseid">Release ID</a>
+								</li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#preimplementationchecklist" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pre-Implementation Checklist</a>
+                        <ul class="collapse list-unstyled" id="preimplementationchecklist">
+								<li>
+									<a href="#preimplementationconsiderations">Considerations</a>
+								</li>
+								<li>
+									<a href="#preimplementationoncallresponsible">On Call person's responsibilities</a>
+								</li>
+								<li>
+									<a href="#preimplementationdelay">Delay in Implementation</a>
+								</li>
+								<li>
+									<a href="#preimplementationprogrammerresponsible">Programmer's Responsibilities</a>
+								</li>
+								<li>
+									<a href="#preimplementationexample">Example of a Completed Change ticket and Release Work Item</a>
+								</li>
+								<li>
+									<a href="#preimplementationcutofftime">Change Ticket Cut Off Times</a>
+								</li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#postimplementationchecklist" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Post-Implementation Checklist</a>
+                        <ul class="collapse list-unstyled" id="postimplementationchecklist">
+								<li>
+									<a href="#postimplementationoncallresp">On Call person's responsibilities</a>
+								</li>
+								<li>
+									<a href="#postimplementationprogrammerresp">Programmer's Responsibilities</a>
+								</li>
+								<li>
+									<a href="#postimplementationaix">If AIX elements promoted to Production</a>
 								</li>
                         </ul>
                     </li>
@@ -905,17 +936,9 @@
 			<p>	xxxxxxxxxxxxxxxxxxxxxxxxx
             </p>
 -->
-
-
-
             <!-- End text of ALM Test Lab Steps document -->
 
-
-
-
-
             <!-- Begin text of Release Work Item Steps document -->
-
 
             <h3><a name="createreleaseworkitem">Creating the Release Work Item</a></h3>
             <p>
@@ -986,10 +1009,140 @@
 			<p>	The Release ID can be found on the Release Work Item's Overview tab, on the right column halfway down
             </p>
 
-
             <!-- End text of Release Work Item Steps document -->
 
+            <!-- Begin text of Pre-Implementation Checklist document -->
 
+            <h3><a name="preimplementationconsiderations">Considerations</a></h3>
+            <p>
+			<p> If you have a change that will not be ready in time for the Weekly Release, but will be ready later in the week and cannot wait until next week's release then coordinate with on-call person
+			<p> Either have the Weekly Release moved farther out into the week, depending on others dependent on the Weekly Release
+			<p> If can't be moved farther out, then you have the option of doing your own Change ticket / Release Work Item outside of the Weekly Release process
+            </p>
+
+            <h3><a name="preimplementationoncallresponsible">On Call person's responsibilities</a></h3>
+            <p>
+			<p>	Check with everyone in our group to see if anyone has changes to be implemented with the Weekly Release for your On-Call week (if there is then do the following):
+			<p>	Fill out the following for a Change ticket that has aged at least 7 days (do this the week before the Weekly release or at the latest, first thing on day before the implementation)
+			<p>	Schedule Start Date/Time - Tuesday and no earlier than 10 AM (leave yourself time for your Tuesday morning activities)
+			<p>	Does not have to be Tuesday, it is up to you, we arbitrarily picked that day (check with those with changes, if needs to be another day)
+			<p>	If Monday is a holiday, then at the earliest choose Wednesday
+			<p>	Change ticket detail fields at top of Change ticket (Membership Support for Group and Product)
+			<p>	Order Summary - Membership Support Weekly Release
+			<p>	Fill out the Plans tab under General Info tab
+			<p>	Contact Details tab fill out same as usual, put yourself down as Project Manager
+			<p>	Fill out the Risk Survey same as usual
+			<p>	Create a Release Work Item in RTC Membership Support product and put it in a In Progress status (In Summary field, enter Membership Support Weekly Release)
+			<p>	Send email to DL-I/S M&M-Membership Support informing everyone in our group what the Change ticket # and Release Work Item # are
+			<p>	On morning of implementation (Release Work Item and Assessment activities below can be done at same time)
+			<p>	Check with those with changes that they are ready to go
+			<p>	Submit Release Work Item for SQA approval
+			<p>	Once approved, submit Release Work Item for Release Manager approval
+			<p>	Complete the logging phase of the Change ticket
+			<p>	IM Lamar to notify him that the Change ticket has been submitted for Assessment
+			<p>	Monitor the Change ticket to see when it goes to Pending Pre-Implementation status
+			<p>	Once in Pre-Implementation phase, fill in the Release ID on the Change ticket
+			<p>	drop down Activities tab and select Update Release ID and enter it there and Save
+			<p>	If needed, a deployment entry can still be entered in the Deployment Details tab
+			<p>	Sometime before your Change ticket window starts, complete the Pre-Implementation phase
+			<p>	The change ticket should now be in a Pending Implementation status
+			<p>	Send email to DL-I/S M&M-Membership Support informing that the Change ticket is now in the Implementation phase
+            </p>
+
+            <h3><a name="preimplementationdelay">Delay in Implementation</a></h3>
+            <p>
+			<p>	If the Change ticket cannot be implemented within the original Change ticket window (and you are no longer in the Logging phase), then have ACM change the window
+			<p>	Just send an email to GM, I/S ACM and give them the Change ticket # and your new schedule start date/time and schedule duration (or schedule end date/time)
+			<p>	You can do this, even if your Change ticket window has passed, as long as your Change ticket has not been closed
+            </p>
+
+            <h3><a name="preimplementationprogrammerresponsible">Programmer's Responsibilities</a></h3>
+            <p>
+			<p>	Have your User Story to be implemented in a Production Ready status
+			<p>	Have your Defect to be implemented in a Verified status and approved by SQA
+			<p>	State of approval line on Defect's Approval tab should now be Approved
+			<p>	Link the User Story or Defect to the Release Work Item provided
+			<p>	For the Change ticket provided fill out the following:
+			<p>	Add short description of your change to the Order Description
+			<p>	Under Deployment tab, enter you Deployment information
+			<p>	Enter your Project # on the Contact Details tab in the Comments section of the Project Manager line
+			<p>	On Configuration tab, enter the jobs that are related to your changes
+			<p>	Send Lamar the 'No changes have been made' email
+			<p>	On morning of implementation (Tuesday), if you have a mainframe change, submit your IS-024 form sometime before or during the Change ticket window (reference the Weekly Release Change ticket # on the IS<p>024 form)
+			<p>	Monitor for email from Change Control that your changes have been moved to Production within the Change ticket window
+			<p>	Once email received, verify that all your changes have been moved correctly to Production
+            </p>
+
+            <h3><a name="preimplementationexample">Example of a Completed Change ticket and Release Work Item</a></h3>
+            <p>
+			<p>	Change ticket 16119
+			<p>	Release Work Item 180851 (Membership Support product)
+            </p>
+
+            <h3><a name="preimplementationcutofftime">Change Ticket Cut Off Times</a></h3>
+            <p>
+			<p>	After Lamar does the assessment of the Change ticket it goes to CAB for approval
+			<p>	The change ticket must be received by CAB by 2 PM for them to approve it for that day, and allow the ticket to be moved to the Pre<p>Implementation phase
+			<p>	The Change ticket must be moved to the Implementation phase by 3 PM for the changes to be moved into Production that day by Change Control
+            </p>
+
+            <!-- End text of Pre-Implementation Checklist document -->
+
+            <!-- Begin text of Post-Implementation Checklist document -->
+
+            <h3><a name="postimplementationoncallresp">On Call person's responsibilities</a></h3>
+            <p>
+			<p>	<strong>Close the Change Ticket</strong>
+			<p>	Sometime the day after your implementation close the Change ticket, see below
+			<p>	Open the Change ticket
+			<p>	Drop down Activities tab and select Update Implementation/Close
+			<p>	Fill out the Platform and Closure Code fields (do not need closure comments)
+			<p>	Click on Save
+			<p>	Click on sequence # 60 under the General Info / Workflow Tasks tab
+			<p>	Click on Edit and drop down the Status field and select Complete
+			<p>	Click on Save
+			<p>	Change ticket status will now be Closed (Status field in upper right of Change ticket)
+			<p>	Change ticket will now be removed from your 'My Active Changes' queue
+            </p>
+
+            <h3><a name="postimplementationprogrammerresp">Programmer's Responsibilities</a></h3>
+            <p>
+			<p> <strong>Complete the ME</strong>
+			<p>	Go to PPM and click on Search (top menu) and Projects
+			<p>	At top next to View Details for Project No: enter 421703 for Membership Support EP or 421684 for BlueAdvantage EP and then click on Go
+			<p>	Halfway down on next screen are several tabs, currently Summary will be picked
+			<p>	Below that click on Edit Work Plan
+			<p>	Returns a list of ME Numbers and their titles under this EP
+			<p>	On right side under Save Done Cancel buttons is Prev or Next buttons to page through the list
+			<p>	Find your ME # and click on it
+			<p>	If Status for the ME is not Complete, then do the below
+			<p>	Make sure that View on left above Seq column is set to Actuals View
+			<p>	Then drop down the Edit button (middle of screen above ME list) and select Actuals
+			<p>	Under Percent complete column, enter 100 (don't need to do this for Unassigned Effort row)
+			<p>	Click on Save (upper right) and then click on Done
+			<p>	Now status for this ME should show Complete
+			<p>	Now Close the ME, see below
+            </p>
+            <h2> Close the ME </h2>
+			<p>	Click on Search (top menu) and Requests
+			<p>	At top next to View Details for Request #: enter the ME # (just the #, no ME in front of it)
+			<p>	On screen returned, if you don't see a Close button at top left, then you are not a resource on this ME
+			<p>	Under Enhancement Details section you will see who the resources are for this ME
+			<p>	On top left of screen returned is a Close button if you are a resource, click on it
+			<p>	A 'Notes for Action:Close' window will appear
+			<p>	Just enter 'Closing ME' in this box and click on Continue Workflow Action selection to the right
+			<p>	Status on right of Summary section will now show Closed
+			<p>	If Status does not show Closed and instead shows Pending Active TS (Time Sheet) Data, then you have this ME on your current un<p>submitted Time Sheet
+			<p>	If you have hours for this week to put towards this ME, then wait until this Time Sheet has been changed to an Approved status, then go back to the ME and Close it
+			<p>	If you don't have more hours to put towards this ME, then remove this ME from your current Time Sheet, then go back to the ME and Close
+
+            <h3><a name="postimplementationaix">If AIX elements promoted to Production</a></h3>
+            <p>
+			<p>	You may consider copying the new version of the elements implemented to the other AIX Test environments to keep them all in sync (assuming no one else is working on the element in another test environment)
+			<p>	That way, if the Med Advantage business folks want a test run in one of the other test environments, you will be running with the current Prod version of the elements
+            </p>
+
+            <!-- End text of Post-Implementation Checklist document -->
 
 
 
